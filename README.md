@@ -16,7 +16,7 @@ For validation on various fields , I have used javascript.</h6>
     <h3>Required</h3><br>
 <img src="images/required1.png">
 <img src="images/required2.png">
-    <h3>Password Validation</h3><br>
+    <h3>Password Validation (Set password field to text type only to show)</h3><br>
 <img src="images/password.png">
 <img src="images/length.png">
 <img src="images/char.png">
