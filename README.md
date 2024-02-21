@@ -11,14 +11,14 @@ For validation on various fields , I have used javascript.</h6>
   <li>Required fields: Some of the fields including email, password, confirm password and username are made compulsory.</li>
 </ul>
 </p>
-<h4>Sign up Page</h4>
+<h2>Sign up Page</h2>
 <img src="images/required1.png">
 <img src="images/required2.png">
 <img src="images/password.png">
 <img src="images/length.png">
 <img src="images/char.png">
 <img src="images/email.png">
-<h4>Sign in Page</h4>
+<h2>Sign in Page</h2>
 <img src="images/req_user.png">
 <img src="images/req_pass.png">
 <img src="images/pass_len.png">
