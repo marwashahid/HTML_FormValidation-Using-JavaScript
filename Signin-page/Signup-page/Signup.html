@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <title>Sign up Form </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link href="style2.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">Signup Form</div>
+        <form onsubmit="return validate()">
+            <div class="user-details">
+                <div class="input-box">
+                    <span class="details" >First Name</span>
+                    <input type="text" id="fname" placeholder="Enter your first name">
+                </div>
+                <div class="input-box">
+                    <span class="details" >Last Name</span>
+                    <input type="text" id="lname" placeholder="Enter your last name" >
+                </div>
+                <div class="input-box">
+                    <span class="details">Username</span>
+                    <input type="text" placeholder="Enter your username">
+                </div>
+                <div class="input-box">
+                    <span class="details" >Email</span>
+                    <input type="text" id="email" placeholder="Enter your Email" >
+                </div>
+                <div class="input-box">
+                    <span class="details">Phone Number</span>
+                    <input type="text" placeholder="Enter your number">
+                </div>
+                <div class="input-box">
+                    <span class="details" >Password</span>
+                    <input type="text" id="password" placeholder="Enter your password">
+                </div>
+                <div class="input-box">
+                    <span class="details" >Confirm Password</span>
+                    <input type="text" id="confirm" placeholder="Confirm password">
+                </div>
+            </div>
+            <div class="gender-details">
+
+                <span class="gender-title">Gender</span>
+                <div class="category">
+                    <input type="radio" name="gender"> <span>Male</span>
+                    <input type="radio" name="gender"> <span>Female</span>
+                    <input type="radio" name="gender"> <span>Prefer not to say</span>
+
+                </div>
+            </div>
+            <button type="submit">Sign up</button>
+        </form>
+    </div>
+    <script>
+        document.getElementById('email').required = true;
+        document.getElementById('password').required = true;
+        document.getElementById('confirm').required = true;
+        document.getElementById('fname').required = true;
+        document.getElementById('lname').required = true;
+        
+        function validate() {
+            //Password validation
+            var pass = document.getElementById('password').value;
+            var confirm = document.getElementById('confirm').value;
+            var regularExpression = /^(?=.*[0-9])(?=.*[!@#$%^&*]).{6,16}$/;
+
+            if (pass != confirm) {
+                alert('Passwords do not match!!')
+                return false;
+            }
+            if (pass.length < 8) {
+                alert('Password must be atleast 8 characters')
+                return false;
+            }
+            if (!regularExpression.test(pass)) {
+
+                //test the password against the regex to see that it must contain a number and a special character
+                alert("password should contain atleast one number and one special character");
+                return false;
+            }
+             
+            //email validation
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            var email = document.getElementById('email').value;
+
+            if (!regularExpression.test(emailRegex))
+            {
+                alert("Please enter a valid email");
+                return false;
+            }
+
+           alert('Account created successfully!');
+           return true;
+        }
+
+    </script>
+
+</body>
+
+</html>
