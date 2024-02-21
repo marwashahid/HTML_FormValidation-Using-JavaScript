@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+  <body>
 <h1>HTML and CSS with Validation using JavaScript</h1>
 <h6>The following repository contains a Sign-in page and a Sign up page which are designed using basic HTML and CSS.
 For validation on various fields , I have used javascript.</h6>
@@ -12,17 +13,22 @@ For validation on various fields , I have used javascript.</h6>
 </ul>
 </p>
 <h2>Sign up Page</h2>
+    <h3>Required</h3><br>
 <img src="images/required1.png">
 <img src="images/required2.png">
+    <h3>Password Validation</h3><br>
 <img src="images/password.png">
 <img src="images/length.png">
 <img src="images/char.png">
+    <h3>Email Validation</h3><br>
 <img src="images/email.png">
 <h2>Sign in Page</h2>
+    <h3>Required user</h3><br>
 <img src="images/req_user.png">
+    <h3>Password Validation</h3><br>
 <img src="images/req_pass.png">
 <img src="images/pass_len.png">
 
 
-  
+  </body>
 </html>
